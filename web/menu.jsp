@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="institucional.jsp" class="selected">Sobre Nós!</a></li>
                 <li><a href="Loja.jsp">Home</a></li>
-                <li><a href="products.html">Quadrinhos</a>
+                <li><a href="prateleira.jsp">Quadrinhos</a>
                     <ul>
                         <li><a href="#submenu1">Liga da Justiça</a></li>
                         <li><a href="#submenu2">Batman</a></li>
@@ -27,7 +27,7 @@
                 </li>
                 <li><a href="cadUsuario.jsp">Cadastre-se !</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="carrinho.jsp">Checkout</a></li>
                 <li><a href="contato.jsp">Contato</a></li>
             </ul>
             <br style="clear: left" />

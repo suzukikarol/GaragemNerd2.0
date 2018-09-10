@@ -117,9 +117,8 @@ ddsmoothmenu.init({
             
             <input type="submit" value="Cadastrar" name="acao"><br/><br/><br/>
  
-          <a href="CadEnd.html">Avançar =></a><br/><br/><br/> 
-          <!--<a href="principal.jsp">Página Principal</a><br/>
-          <a href=".../ControleNotificarPorEmail">Notificar por E-mail</a><br/><br/>  -->
+                <a href="CadEnd.jsp">Avançar =></a><br/><br/><br/> 
+          
         </form>
         </div>
         </div>

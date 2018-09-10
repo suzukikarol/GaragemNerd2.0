@@ -18,18 +18,18 @@
             	<h3>Os títulos mais procurados</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    	<li class="first"><a href="#">Batman</li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">Homem Aranha</a></li>
-                        <li><a href="#">Hulk</a></li>
-                        <li><a href="#">DeadPool</a></li>
-                        <li><a href="#">Homem Formiga</a></li>
-                        <li><a href="#">Capitão América</a></li>
-                        <li><a href="#">Turma da Mônica</a></li>
-                        <li><a href="#">tio Patinhas</a></li>
-                        <li><a href="#">Mickey</a></li>
-                        <li><a href="#">Pluto</a></li>
-                        <li><a href="#">E muitos outros títulos!!!</a></li>
+                    	<li class="first">Batman</li>
+                        <li>Flash</li>
+                        <li>Homem Aranha</li>
+                        <li>Hulk</li>
+                        <li>DeadPool</li>
+                        <li>Homem Formiga</li>
+                        <li>Capitão América</li>
+                        <li>Turma da Mônica</li>
+                        <li>tio Patinhas</li>
+                        <li>Mickey</li>
+                        <li>Pluto</li>
+                        <li><a href="prateleira.jsp">E muitos outros títulos!!!</a></li>
            
                     </ul>
                 </div>

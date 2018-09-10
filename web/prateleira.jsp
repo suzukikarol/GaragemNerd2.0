@@ -81,79 +81,10 @@ function clearText(field)
         <%@include file="header.jsp"%>
         <%@include file="menu.jsp" %>
         <%@include file="submenu.jsp" %>
-    
-            <div id="templatemo_middle" class="carousel">
-    	<div class="panel">
-				
-            <div class="details_wrapper">
-
-                    <div class="details">
-
-                    <div class="detail">
-                            <h2><a href="#">Garagem Nerd</a></h2>
-                                                                                                                <p>Garagem Nerd é o local ideal para encontrar seus quadrinhos e completar sua coleção.</p>
-                            <a href="#" title="Read more" class="more">Saiba mais</a>
-                    </div><!-- /detail -->
-
-                    <div class="detail">
-                            <h2><a href="#">Temos HQ's Clássicas</a></h2>
-                            <p>Liga da Justiça, Vingadores, Disney, Nacionais, Estrangeiros e etc.</p>
-                            <a href="#" title="Read more" class="more">Saiba mais</a>
-                    </div><!-- /detail -->
-
-                    <div class="detail">
-                            <h2><a href="#">Ofertas imperdíveis</a></h2>
-                            <p>Toda semana, ofertas que você não pode perder.</p>
-                            <a href="#" title="Read more" class="more">Saiba mais</a>
-                    </div><!-- /detail -->
-
-                    <div class="detail">
-                            <h2><a href="#">Seja um NERD</a></h2>
-                            <p>Não perca tempo e cadastre-se já.</p>
-                            <a href="cadUsuario.jsp" title="Read more" class="more">Clique aqui e cadastre-se já!!!!</a>
-                    </div><!-- /detail -->
-
-                </div><!-- /details -->
-
-            </div><!-- /details_wrapper -->
-
-            <div class="paging">
-                    <div id="numbers"></div>
-                    <a href="javascript:void(0);" class="previous" title="Previous" >Previous</a>
-                    <a href="javascript:void(0);" class="next" title="Next">Next</a>
-            </div><!-- /paging -->
-
-            <a href="javascript:void(0);" class="play" title="Turn on autoplay">Play</a>
-            <a href="javascript:void(0);" class="pause" title="Turn off autoplay">Pause</a>
-
-    </div><!-- /panel -->
-
-    <div class="backgrounds">
-
-            <div class="item item_1">
-                    <img src="images/slider/02.jpg" alt="Slider 01" />
-            </div><!-- /item -->
-
-            <div class="item item_2">
-                    <img src="images/slider/03.jpg" alt="Slider 02" />
-            </div><!-- /item -->
-
-            <div class="item item_3">
-                    <img src="images/slider/01.jpg" alt="Slider 03" />
-            </div><!-- /item -->
-
-            <div class="item item_4">
-                    <img src="images/slider/marvelbackground.jpg" alt="Slider 04" />
-            </div><!-- /item -->
-
-    </div><!-- /backgrounds -->
-    
-    </div> <!-- END of templatemo_middl-->
         
         <div class="img-test">
        
-   
-    
+       
         <%
              // Recupera os produtos.
             List<Produto> produtos = (List<Produto>)

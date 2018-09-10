@@ -70,7 +70,7 @@
             <div id="templatemo_header">
             <%@include file="header.jsp"%>
             <%@include file="menu.jsp" %>
-        
+            <%@include file="menulateral.jsp"%>
             <%@include file="submenu.jsp" %>
             
             <h1>Cadastro de Produtos</h1>

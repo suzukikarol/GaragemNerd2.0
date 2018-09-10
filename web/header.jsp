@@ -19,7 +19,7 @@
         </div>
         
         <div id="header_right">
-	    <a href="#">My Account</a> | <a href="#">My Wishlist</a> | <a href="#">My Cart</a> | <a href="#">Checkout</a> | <a href="login.jsp">Log In</a>
+            <a href="#">My Account</a> | <a href="carrinho.jsp">Checkout</a> | <a href="login.jsp">Log In</a>
         </div>
         <div class="cleaner"></div>
         </div> <!-- END of templatemo_header -->

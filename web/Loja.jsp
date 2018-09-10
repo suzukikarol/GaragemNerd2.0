@@ -142,94 +142,83 @@ function clearText(field)
     </div> <!-- END of templatemo_middle -->
     
      <div id="content" class="float_r">
-        <h1>Mais Procurados</h1>
+        <h1>Nossa prateleira conta com uma variedade de quadrinhos</h1>
                   
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/01.jpg" alt="Image 01" /></a>
                 <h3>Batman - Detective Comics</h3>
                 <p class="product_price">$ 9.99</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+           
             </div>        	
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/02.jpg" alt="Image 02" /></a>
                 <h3>Doctor Strange</h3>
                 <p class="product_price">$ 6.50</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+              
             </div>        	
             <div class="product_box no_margin_right">
             	<a href="productdetail.html"><img src="images/product/03.jpg" alt="Image 03" /></a>
                 <h3>Captain Marvel</h3>
                 <p class="product_price">$ 12,0</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+          
             </div>        	
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/04.jpg" alt="Image 04" /></a>
                 <h3>Iron Man</h3>
                 <p class="product_price">$ 6.50</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+              
             </div>        	
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/05.jpg" alt="Image 05" /></a>
                 <h3>Space Man</h3>
                 <p class="product_price">$ 7.99</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+              
             </div>        	
             <div class="product_box no_margin_right">
             	<a href="productdetail.html"><img src="images/product/06.jpg" alt="Image 06" /></a>
                 <h3>DeadPool - Dead Part One<h3/><a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</h3>
                 <p class="product_price">$ 7.50</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+            
             </div>        	
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/07.jpg" alt="Image 07" /></a>
                 <h3>Hulk and Wolverine</h3>
                 <p class="product_price">$ 12.0</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+              
             </div>        	
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/08.jpg" alt="Image 08" /></a>
                 <h3>Homem Aranha</h3>
                 <p class="product_price">$ 7.99</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+              
             </div>        	
             <div class="product_box no_margin_right">
             	<a href="productdetail.html"><img src="images/product/09.jpg" alt="Image 09" /></a>
                 <h3>Captain America</h3>
                 <p class="product_price">$ 10</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+          
             </div> 
            <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/11.jpg" alt="Image 10" /></a>
                 <h3>Thor</h3>
                 <p class="product_price">$ 9.99</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+           
             </div>        	
             <div class="product_box">
             	<a href="productdetail.html"><img src="images/product/12.jpg" alt="Image 11" /></a>
                 <h3>Batman e Robin</h3>
                 <p class="product_price">$ 6.50</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+         
             </div>        	
             <div class="product_box no_margin_right">
             	<a href="productdetail.html"><img src="images/product/13.jpg" alt="Image 12" /></a>
                 <h3>Capitão América</h3>
                 <p class="product_price">$ 12,0</p>
-                <a href="shoppingcart.html" class="add_to_card">Add to Cart</a>
-                <a href="productdetail.html" class="detail">Detalhes</a>
+        
             </div>
-             
- 			
+                
+        <a href="prateleira.jsp">Conheça nossos quadrinhos!</a>
+ 	
         </div> 
     
     <%@include file="menulateral.jsp" %>

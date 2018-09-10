@@ -54,7 +54,7 @@
         <strong>Valor Total: <%=carrinho.calculaTotal() %></strong><br/><br/>
         <a href="prateleira.jsp">Continue Comprando!</a><br/>
         <a href="ControleCarrinho?acao=cancelaCompra">Cancelar Compra</a><br/><br/>
-        <a href="index.jsp">Finalizar Compra!</a>
+        <a href="finalizarCompra.jsp">Finalizar Compra!</a>
         <%@include file="footer.jsp" %>
     </body>
 </html>
