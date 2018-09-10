@@ -1,0 +1,48 @@
+create table Usuario(
+    id serial not null primary key,
+    nome varchar (100) not null,
+    rg varchar (15) not null,
+    cpf varchar not null,
+    dtnasc varchar,
+    tel varchar (15),
+    email varchar,
+    login varchar not null,
+    senha varchar not null,
+    perfil varchar,
+    status boolean
+);
+insert into Usuario (nome, rg, cpf, dtnasc, tel, email, login, senha, perfil, status) values ('Maria','152487980','11151100178','12051985','985678965','maria@gmail.com','11151100178','2018','ADMINISTRADOR', 'true');
+
+create table Endereco(
+    id_endereco serial primary key,
+    logradouro varchar (200),
+    cep varchar(10),
+    numero varchar, 
+    bairro varchar,
+    cidade varchar,
+    estado varchar,
+    usuario int,
+    constraint fk_Endereco foreign key(usuario) references Usuario (id)
+);
+insert into Endereco (logradouro, cep, numero, bairro, cidade, estado, usuario) values ('Rua 1','08752-009','2018','Centro','Aqui','Ali',1)
+
+create table Quadrinho(
+    id_quadrinho serial primary key,
+    titulo varchar,
+    descricao varchar,
+    preco real,
+    imagem varchar,
+    status boolean
+);
+insert into Quadrinho(titulo, descricao, preco, imagem, status) values('Batman', 'alguma descricao', 10.00,'Batman_1.jpg', 'TRUE');
+
+create table Vendas(
+	id_vendas serial primary key,
+	id_usuario int,
+	id_produto int,
+	valor_total real,
+	data_venda date,
+	constraint fk_Vendas foreign key (id_usuario) references Usuario (id),
+	constraint fk1_Vendas foreign key (id_produto) references Quadrinho (id_quadrinho)
+);
+insert into Vendas(id_usuario, id_produto, valor_total, data_venda) values(1, 1, 10.00,'02-04-2018');
