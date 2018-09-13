@@ -79,10 +79,11 @@ function clearText(field)
         <%@include file="menu.jsp" %>
         
         <%@include file="submenu.jsp" %>
+     
     
     <div id="templatemo_middle" class="carousel">
     	<div class="panel">
-	    <div class="details_wrapper">
+             <div class="details_wrapper">
                     <div class="details">
                     <div class="detail">
                         <h2><a href="#">Garagem Nerd</a></h2>
@@ -99,7 +100,7 @@ function clearText(field)
                     <div class="detail">
                             <h2><a href="#">Ofertas imperdíveis</a></h2>
                             <p>Toda semana, ofertas que você não pode perder.</p>
-                            <a href="#" title="Read more" class="more">Saiba mais</a>
+                            <a href="prateleira.jsp" title="Read more" class="more">Saiba mais</a>
                     </div><!-- /detail -->
 
                     <div class="detail">
@@ -107,7 +108,9 @@ function clearText(field)
                             <p>Não perca tempo e cadastre-se já.</p>
                             <a href="cadUsuario.jsp" title="Read more" class="more">Clique aqui e cadastre-se já!!!!</a>
                     </div><!-- /detail -->
+                   
                 </div><!-- /details -->
+                   
             </div><!-- /details_wrapper -->
 
             <div class="paging">
@@ -120,6 +123,7 @@ function clearText(field)
             <a href="javascript:void(0);" class="pause" title="Turn off autoplay">Pause</a>
 
     </div><!-- /panel -->
+
 
     <div class="backgrounds">
 
@@ -140,6 +144,7 @@ function clearText(field)
             </div><!-- /item -->
     </div><!-- /backgrounds -->
     </div> <!-- END of templatemo_middle -->
+  
     
      <div id="content" class="float_r">
         <h1>Nossa prateleira conta com uma variedade de quadrinhos</h1>
@@ -214,18 +219,18 @@ function clearText(field)
             	<a href="productdetail.html"><img src="images/product/13.jpg" alt="Image 12" /></a>
                 <h3>Capitão América</h3>
                 <p class="product_price">$ 12,0</p>
-        
+
             </div>
-                
+                            
         <a href="prateleira.jsp">Conheça nossos quadrinhos!</a>
  	
         </div> 
     
-    <%@include file="menulateral.jsp" %>
+ 
     
-    <%@include file="footer.jsp" %>
+  
     
 </div> <!-- END of templatemo_wrapper -->
-
+  <%@include file="footer.jsp" %>
 </body>
 </html>

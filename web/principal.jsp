@@ -92,13 +92,7 @@ ddsmoothmenu.init({
             <h1 style="font-family: cursive, Comic Sans"><font color="black">Bem vindo, <%=usuario.getNome()%>!</h1>
             <%}%>
             <ul>
-                <font color ="black" style="font-family: cursive, Comic Sans">
-                    <!--<li><a href="admin/cad_user.jsp">Cadastro usuário</a></li></br>-->
-                    <li><a href="cadUsuario.jsp">Cadastro de clientes</a></li></br>
-                    <li><a href="ControleUsuario?acao=Listar">Lista De Clientes</a></li><br>                    
-                    <li><a href="ControleEndereco?acao=Listar">Lista De Endereços</a></li><br>
-                    <li><a href="cadProduto.jsp">Cadastro de produtos</a></li></br>
-                    <li><a href="ControleProduto?acao=Listar">Lista De Produtos</a></li><br>            
+                <font color ="black" style="font-family: cursive, Comic Sans">    
                     <li><a href="prateleira.jsp">Prateleira Virtual</a></li></br>
                     <li><a href="carrinho.jsp">Meu Carrinho</a></li></br>
                     <li><a href="ControleAcesso?acao=Sair">Logout</a></li>

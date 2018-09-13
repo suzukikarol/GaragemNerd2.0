@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import modelo.Usuario;
 import DAO.UsuarioDAO;
+import modelo.CarrinhoDeCompra;
 import static modelo.PerfilDeAcesso.ADMINISTRADOR;
 
 /**
@@ -42,14 +43,18 @@ public class ControleAcesso extends HttpServlet {
                     //cria uma sessao para o usuario
                     HttpSession sessaoUsuario = request.getSession();
                     sessaoUsuario.setAttribute("usuarioAutenticado", usuarioAutenticado);
-                    /*** PARTE NOVA DEPOIS ARRUMAR ISSO AQUI ***  
-                    if(usuario.getPerfil().equals(ADMINISTRADOR)){*/
+                     
+                    if(usuario.getPerfil().equals(ADMINISTRADOR)){
                     //redireciona para a página principal
-                    response.sendRedirect("principal.jsp");
-                    /*}else
-                        response.sendRedirect("home.jsp");*/
+                    response.sendRedirect("/admin/main.jsp");
+                    }else{
+                        HttpSession sessao = request.getSession();
+                        CarrinhoDeCompra carrinho = (CarrinhoDeCompra)sessao.getAttribute("carrinho");
+                        
+                        request.getRequestDispatcher("/finalizar.jsp").forward(request,response);
+                    }
                 }else{
-                    RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
+                    RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
                     request.setAttribute("msg","Login ou Senha estão incorretos");
                     rd.forward(request, response);
                 }
