@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -144,7 +145,7 @@ public class ProdutoDAO {
         try{            
             conexao = Conexao.getConexao();
             
-            String sql = "SELECT * FROM Quadrinho Where id_quadrinho=?";
+            String sql = "SELECT * FROM Produto Where id=?";
             
             PreparedStatement pstmt = conexao.prepareStatement(sql);
             pstmt.setInt(1, produto.getId());            
@@ -153,7 +154,7 @@ public class ProdutoDAO {
             //só vai retornar uma linha de obj
             while(rs.next()){
                 
-                produtoConsulta.setId(rs.getInt("id_quadrinho"));
+                produtoConsulta.setId(rs.getInt("id"));
                 produtoConsulta.setTitulo(rs.getString("titulo"));
                 produtoConsulta.setDescricao(rs.getString("descricao"));                
                 produtoConsulta.setPreco(rs.getDouble("preco"));
@@ -168,6 +169,39 @@ public class ProdutoDAO {
         
         return produtoConsulta;
     }
+    
+        public List<Produto> buscarProduto(String txt){
+        Connection conexao = null;
+        List<Produto> produtos = new ArrayList<>();
+        Produto produto = new Produto();
+        try{            
+            conexao = Conexao.getConexao();
+            
+            String sql = "select * from produto where titulo ilike '%"+txt+"%'";
+            PreparedStatement pstmt = conexao.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            
+            //só vai retornar uma linha de obj
+            while(rs.next()){
+                
+                produto.setId(rs.getInt("id"));
+                produto.setTitulo(rs.getString("titulo"));
+                produto.setDescricao(rs.getString("descricao"));                
+                produto.setPreco(rs.getDouble("preco"));
+                produto.setImagem(rs.getString("imagem"));
+                produto.setStatus(rs.getBoolean("status"));
+                
+                produtos.add(produto);
+                   
+            }
+            return produtos;
+        }catch (Exception e) {
+               Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, "Erro ao listar: "+ e.getMessage());
+        }  
+        
+        return null;
+    }
+    
     
     public void Alterar(Produto produto){
          /*

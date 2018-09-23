@@ -97,7 +97,8 @@ function clearText(field)
         <!--/ControleProduto?acao=Listar"-->
       
            <form action="BuscaProduto" method="get">
-                <input type="search" name="q" placeholder="Digite o nome do produto para buscar">
+               <input type="text" name="termoBusca" id="termoBusca" placeholder="Digite o nome do produto para buscar">
+                   <button type="submit" id="btnBuscaR" name="btnBuscar"> Buscar</button>
            </form></br>
             <table border="0" cellpadding="5" align="center">
             <%
