@@ -17,8 +17,8 @@
             <ul>
                 <li><a href="institucional.jsp" class="selected">Sobre Nós!</a></li>
                 <li><a href="prateleira.jsp">Quadrinhos</a></li>
-                <li><a href="cadCli.html">Cadastros</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="cadUsuario.jsp">Cadastros</a></li>
+                <li><a href="faqs.jsp">FAQs</a></li>
                 <li><a href="carrinho.jsp">Checkout</a></li>
                 <li><a href="contato.jsp">Contato</a></li>
             </ul>

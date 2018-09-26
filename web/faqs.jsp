@@ -110,6 +110,7 @@ ddsmoothmenu.init({
         </div> 
     <hr>
     </div>
-    <%@include file="footer.jsp" %>
+
     </body>
+                <%@include file="footer.jsp" %>
 </html>

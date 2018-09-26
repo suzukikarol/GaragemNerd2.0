@@ -91,7 +91,7 @@ ddsmoothmenu.init({
         </br>
         </br>
         </br>
-        <h1> <font color= #FF0040>Você não possui permissão de acesso!</h1> </font>
+        <h1> <font color= #FF0040 style="align-content: center">Você não possui permissão de acesso!</h1> </font>
         <br>
         <br>
         <br>
