@@ -177,8 +177,9 @@ public class ProdutoDAO {
         try{            
             conexao = Conexao.getConexao();
             
-            String sql = "select * from produto where titulo ilike '%"+txt+"%'";
+            String sql = "select * from produto where titulo ilike ?";
             PreparedStatement pstmt = conexao.prepareStatement(sql);
+            pstmt.setString(1, '%' + txt + '%');
             ResultSet rs = pstmt.executeQuery();
             
             //só vai retornar uma linha de obj
