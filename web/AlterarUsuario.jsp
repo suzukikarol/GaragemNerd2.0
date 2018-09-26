@@ -1,7 +1,7 @@
-<%-- 
-    Document   : alterarCli
-    Created on : 14/02/2018, 20:06:24
-    Author     : Beatriz
+<%--
+    Document   : AlterarUsuario
+    Created on : 25/09/2018, 20:31:01
+    Author     : Karoline
 --%>
 
 <%@page import="java.util.List"%>
@@ -13,13 +13,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Alterar Cadstro de Usuário</title>
-  <meta name="keywords" content="" />
-<meta name="description" content="" />
-<!-- templatemo 352 station shop -->
-<!-- 
-Station Shop Template 
-http://www.templatemo.com/preview/templatemo_352_station_shop 
--->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
@@ -61,28 +57,24 @@ ddsmoothmenu.init({
 <script src="js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="js/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    
-    $(document).ready(function() {
-        
-        $(".carousel").dualSlider({
-            auto:true,
-            autoDelay: 6000,
-            easingCarousel: "swing",
-            easingDetails: "easeOutBack",
-            durationCarousel: 1000,
-            durationDetails: 600
-        });
-        
-    });
-    
-</script>
 
 </head>
 
     <body>    
-        <%@include file="header.jsp"%>
-        <%@include file="menu.jsp" %>
+         <div id="templatemo_wrapper">
+	
+            <%@include file="header.jsp"%>
+
+            <%@include file="submenu.jsp"%>
+         
+        <div id="templatemo_main">
+        
+            <div id="sidebar" class="float_l">
+                <%@include file="menulateral.jsp" %>
+            </div>
+            <%@include file="menulateral2.jsp" %>
+           
+        </div>
         
         <% 
         
@@ -94,27 +86,28 @@ ddsmoothmenu.init({
            
         %>
   
-        <div>
-            <h1 style="text-align: center;">ATUALIZAR CADASTRO DE CLIENTES</h1>
-            <form action="ControleUsuario?id=<%= usuario.getId()%>" method="POST">
-            ID: <input type="text" name="txtId" value="<%= usuario.getId() %>"><br/><br/>
-            Nome: <input type="text" name="txtNome" value="<%= usuario.getNome() %>"><br/>
-            RG: <input type="text" name="txtRG" value="<%= usuario.getRg() %>"><br/>
-            CPF: <input type="text" name="txtCPF" value="<%= usuario.getCpf() %>"><br/>
-            Data de Nasc: <input type="date" name="txtDtNasc" value="<%= usuario.getDtnasc() %>"><br/>
-            Telefone: <input type="text" name="txtTelefone" value="<%= usuario.getTelefone() %>"><br/>
-            Email: <input type="email" name="txtEmail" value="<%= usuario.getEmail() %>"><br/><br/> 
-            Login: <input type="text" name="txtLogin" value="<%= usuario.getLogin() %>"<br/><br/>
-            Senha: <input type="text" name="txtSenha" value="<%= usuario.getSenha() %>"><br/><br/>
+            <div>
+                <h1 style="text-align: center;">ATUALIZAR CADASTRO DE CLIENTES</h1>
+                <form action="ControleUsuario?id=<%= usuario.getId()%>" method="POST">
+                ID: <input type="text" name="txtId" value="<%= usuario.getId() %>"><br/><br/>
+                Nome: <input type="text" name="txtNome" value="<%= usuario.getNome() %>"><br/>
+                RG: <input type="text" name="txtRG" value="<%= usuario.getRg() %>"><br/>
+                CPF: <input type="text" name="txtCPF" value="<%= usuario.getCpf() %>"><br/>
+                Data de Nasc: <input type="date" name="txtDtNasc" value="<%= usuario.getDtnasc() %>"><br/>
+                Telefone: <input type="text" name="txtTelefone" value="<%= usuario.getTelefone() %>"><br/>
+                Email: <input type="email" name="txtEmail" value="<%= usuario.getEmail() %>"><br/><br/> 
+                Login: <input type="text" name="txtLogin" value="<%= usuario.getLogin() %>"<br/><br/>
+                Senha: <input type="text" name="txtSenha" value="<%= usuario.getSenha() %>"><br/><br/>
             
             
+
+                <input a href="ControleUsuario?id=<%= usuario.getId()%>" class="ui-btn ui-btn-b" type="submit" name="acao" value="Alterar">
+                <input class="ui-btn ui-btn-b" type="submit" name="acao" value="Excluir"><br/><br/>
             
-            <input a href="ControleUsuario?id=<%= usuario.getId()%>" class="ui-btn ui-btn-b" type="submit" name="acao" value="Alterar">
-            <input class="ui-btn ui-btn-b" type="submit" name="acao" value="Excluir"><br/><br/>
             
-            
-        </form>
-    </div>
+            </form>
+            </div>
+         </div>
         <a href="principal.jsp">Página Principal</a>
         <%@include  file="footer.jsp" %>
     </body>

@@ -15,11 +15,7 @@
         <title>Garagem Nerd</title>
         <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!-- templatemo 352 station shop -->
-<!-- 
-Station Shop Template 
-http://www.templatemo.com/preview/templatemo_352_station_shop 
--->
+
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
@@ -61,28 +57,25 @@ ddsmoothmenu.init({
 <script src="js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="js/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    
-    $(document).ready(function() {
-        
-        $(".carousel").dualSlider({
-            auto:true,
-            autoDelay: 6000,
-            easingCarousel: "swing",
-            easingDetails: "easeOutBack",
-            durationCarousel: 1000,
-            durationDetails: 600
-        });
-        
-    });
-    
-</script>
-
 </head>
 
     <body>    
-        <%@include file="header.jsp"%>
-        <%@include file="menu.jsp" %>
+        <body>    
+         <div id="templatemo_wrapper">
+	
+            <%@include file="header.jsp"%>
+
+            <%@include file="submenu.jsp"%>
+         
+        <div id="templatemo_main">
+        
+            <div id="sidebar" class="float_l">
+                <%@include file="menulateral.jsp" %>
+            </div>
+            <%@include file="menulateral2.jsp" %>
+           
+        </div>
+            
         <h1>Prateleira Virtual</h1>
         <form action="BuscaProduto" method="get">
             <input type="search" name="q" placeholder="Digite o nome do produto para buscar">
@@ -115,7 +108,8 @@ ddsmoothmenu.init({
         <%
             }
         %>
-        
+        </br>
+         </div>
         <%@include file="footer.jsp" %>
     </body>
 </html>

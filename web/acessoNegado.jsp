@@ -6,17 +6,14 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Garagem Nerd</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!-- templatemo 352 station shop -->
-<!-- 
-Station Shop Template 
-http://www.templatemo.com/preview/templatemo_352_station_shop 
--->
+
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
@@ -37,7 +34,9 @@ function clearText(field)
     if (field.defaultValue == field.value) field.value = '';
     else if (field.value == '') field.value = field.defaultValue;
 }
+</script>
 
+<script type="text/javascript">
 
 ddsmoothmenu.init({
 	mainmenuid: "top_nav", //menu DIV id
@@ -46,20 +45,6 @@ ddsmoothmenu.init({
 	//customtheme: ["#1c5a80", "#18374a"],
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
-
- 
-    $(document).ready(function() {
-        
-        $(".carousel").dualSlider({
-            auto:true,
-            autoDelay: 6000,
-            easingCarousel: "swing",
-            easingDetails: "easeOutBack",
-            durationCarousel: 1000,
-            durationDetails: 600
-        });
-        
-    });
 
 </script>
 
@@ -70,17 +55,37 @@ ddsmoothmenu.init({
 <script src="js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="js/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
 
-</head>
+<script>
+    function formatar(mascara, documento){
+      var i = documento.value.length;
+      var saida = mascara.substring(0,1);
+      var texto = mascara.substring(i);
 
-<body>
+      if (texto.substring(0,1) != saida){
+                documento.value += texto.substring(0,1);
+      }
 
-<div id="templatemo_wrapper">
-	<div id="templatemo_header">
+    }
+</script>
+
+    </head>
     
+    <body>
+    <div id="templatemo_wrapper">
+	
+            <%@include file="header.jsp"%>
+
+            <%@include file="submenu.jsp"%>
+         
+        <div id="templatemo_main">
         
-        <%@include file="header.jsp"%>
-        <%@include file="menu.jsp" %>
-        <br>
+            <div id="sidebar" class="float_l">
+                <%@include file="menulateral.jsp" %>
+            </div>
+            <%@include file="menulateral2.jsp" %>
+           
+        </div>
+        
         <br>
         <br>
         </br>
@@ -94,6 +99,8 @@ ddsmoothmenu.init({
         </br>
         </br>
         <a href="principal.jsp">Voltar</a>
+        <hr>
         <%@include file="footer.jsp" %>
+    </div>
     </body>
 </html>

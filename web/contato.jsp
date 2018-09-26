@@ -12,11 +12,7 @@
 <title>Garagem Nerd</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!-- templatemo 352 station shop -->
-<!-- 
-Station Shop Template 
-http://www.templatemo.com/preview/templatemo_352_station_shop 
--->
+
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
@@ -58,22 +54,6 @@ ddsmoothmenu.init({
 <script src="js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="js/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
 
-        <script type="text/javascript">
-    
-            $(document).ready(function() {
-
-                $(".carousel").dualSlider({
-                    auto:true,
-                    autoDelay: 6000,
-                    easingCarousel: "swing",
-                    easingDetails: "easeOutBack",
-                    durationCarousel: 1000,
-                    durationDetails: 600
-                });
-
-            });
-
-        </script>
 
         <script>
             function formatar(mascara, documento){
@@ -92,10 +72,21 @@ ddsmoothmenu.init({
 <body>
 
 <div id="templatemo_wrapper">
-    <%@include file="header.jsp" %>
-      
-        <div id="content" class="float_r">
-        	
+     <div id="templatemo_wrapper">
+	
+            <%@include file="header.jsp"%>
+
+            <%@include file="submenu.jsp"%>
+         
+        <div id="templatemo_main">
+        
+            <div id="sidebar" class="float_l">
+                <%@include file="menulateral.jsp" %>
+            </div>
+            <%@include file="menulateral2.jsp" %>
+           
+        </div>
+            
             <h1>Contate-nos</h1>
             <div class="content_half float_l">
 		<h4>Envie sua mensagem...</h4>
@@ -117,22 +108,16 @@ ddsmoothmenu.init({
             	</form>
                 </div>
             </div>
-              <%@include file="menu.jsp" %>
-              <%@include file="menulateral.jsp" %> 
-            <div class="cleaner h20"></div>
+           <div class="cleaner h20"></div>
             <h6><strong>LOCALIZAÇÃO</strong></h6>
                 <br>RUA MOGI DAS CRUZES,<br />
             	<br>CENTRO<br />
             	<br>CEP 08940568<br /><br />
                 <strong>Phone:</strong> 020-050-1920<br />
             	<strong>Email:</strong> <a href="mailto:garagemnerd2.7@gmail.com">garagemnerd2.7@gmail.com</a><br />
-            </div>
- 
-        
-       
-        <div class="cleaner"></div>
+                
     </div> <!-- END of templatemo_main -->
-    
+    <hr>
     <%@include file="footer.jsp" %>
     
 </div> <!-- END of templatemo_wrapper -->

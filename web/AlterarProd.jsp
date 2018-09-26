@@ -60,28 +60,25 @@ ddsmoothmenu.init({
 <script src="js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="js/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    
-    $(document).ready(function() {
-        
-        $(".carousel").dualSlider({
-            auto:true,
-            autoDelay: 6000,
-            easingCarousel: "swing",
-            easingDetails: "easeOutBack",
-            durationCarousel: 1000,
-            durationDetails: 600
-        });
-        
-    });
-    
-</script>
-
 </head>
 
     <body>    
-        <%@include file="header.jsp"%>
-        <%@include file="menu.jsp" %>
+      
+         <div id="templatemo_wrapper">
+	
+            <%@include file="header.jsp"%>
+
+            <%@include file="submenu.jsp"%>
+         
+        <div id="templatemo_main">
+        
+   	<div id="sidebar" class="float_l">
+            <%@include file="menulateral.jsp" %>
+            </div>
+            <%@include file="menulateral2.jsp" %>
+           
+        </div>
+        
         <%
             //recuperar a lista do request
             Produto produto = (Produto)request.getAttribute("consulta");
@@ -109,5 +106,6 @@ ddsmoothmenu.init({
         
         </div>            
             <a href="principal.jsp">Página Principal</a>
+            <%@include file="footer.jsp" %>
     </body>
 </html>

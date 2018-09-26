@@ -1,6 +1,6 @@
 <%-- 
     Document   : submenu
-    Created on : 01/09/2018, 01:59:53
+    Created on : 25/09/2018, 16:33:12
     Author     : karol
 --%>
 
@@ -9,12 +9,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Submenu</title>
+       
     </head>
     <body>
-         <div id="menu_second_bar">
+        <div id="templatemo_menu">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="institucional.jsp" class="selected">Sobre Nós!</a></li>
+                <li><a href="prateleira.jsp">Quadrinhos</a></li>
+                <li><a href="cadCli.html">Cadastros</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="carrinho.jsp">Checkout</a></li>
+                <li><a href="contato.jsp">Contato</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of ddsmoothmenu -->
+        <div id="menu_second_bar">
         	<div id="top_shopping_cart">
-            	Shopping Cart: <strong>0 Products</strong> ( <a href="#">Show Cart</a> )
+                    Shopping Cart: <strong>3 Products</strong> ( <a href="carrinho.jsp">Show Cart</a> )
             </div>
         	<div id="templatemo_search">
                 <form action="#" method="get">

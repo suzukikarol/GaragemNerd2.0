@@ -15,11 +15,7 @@
 <title>Garagem Nerd</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<!-- templatemo 352 station shop -->
-<!-- 
-Station Shop Template 
-http://www.templatemo.com/preview/templatemo_352_station_shop 
--->
+
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
@@ -61,44 +57,36 @@ ddsmoothmenu.init({
 <script src="js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="js/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
 
-        <script type="text/javascript">
-    
-            $(document).ready(function() {
+<script>
+    function formatar(mascara, documento){
+      var i = documento.value.length;
+      var saida = mascara.substring(0,1);
+      var texto = mascara.substring(i);
 
-                $(".carousel").dualSlider({
-                    auto:true,
-                    autoDelay: 6000,
-                    easingCarousel: "swing",
-                    easingDetails: "easeOutBack",
-                    durationCarousel: 1000,
-                    durationDetails: 600
-                });
+      if (texto.substring(0,1) != saida){
+                documento.value += texto.substring(0,1);
+      }
 
-            });
-
-        </script>
-
-        <script>
-            function formatar(mascara, documento){
-              var i = documento.value.length;
-              var saida = mascara.substring(0,1);
-              var texto = mascara.substring(i);
-
-              if (texto.substring(0,1) != saida){
-                        documento.value += texto.substring(0,1);
-              }
-
-            }
-        </script>
+    }
+</script>
     </head>
     
     <body>
 
-        <%@include file="header.jsp"%>
-        <%@include file="menu.jsp" %>
-        <%@include file="submenu.jsp" %>
-        <%@include file="menulateral.jsp" %>
+      <div id="templatemo_wrapper">
+	
+            <%@include file="header.jsp"%>
+
+            <%@include file="submenu.jsp"%>
+         
+        <div id="templatemo_main">
         
+            <div id="sidebar" class="float_l">
+                <%@include file="menulateral.jsp" %>
+            </div>
+            <%@include file="menulateral2.jsp" %>
+           
+        </div>
         <h1 style="text-align:center; font-family: cursive, Comic Sans">Lista de Usuário</h1>
         <%
             //recuperar lista do request
@@ -139,7 +127,7 @@ ddsmoothmenu.init({
      
    
                         
-                <%-- <td><a href="ControlePessoa?id=<%=usuario.getId() %>&acao=Excluir"> Excluir</a></td> --%>
+                <td><a href="ControlePessoa?id=<%=usuario.getId() %>&acao=Excluir"> Excluir</a></td>
                 <td><a href="ControleUsuario?id=<%=usuario.getId()%>&acao=Consultar"> Editar</a></td>
                 <td></td>
                 
@@ -150,8 +138,12 @@ ddsmoothmenu.init({
             %>
          
         </table>        
-            <br><br/>
+            <br>
             <a href="principal.jsp">Voltar</font></a>
+            <hr>
             <%@include file="footer.jsp" %>
+            </br>
+      </div>
     </body>
+
 </html>

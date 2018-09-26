@@ -9,19 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>header</title>
     </head>
     <body>
         <div id="templatemo_header">
     	
     	<div id="site_title">
-        <h1><a href="#">Garagem Nerd</a></h1>
+            <h1><a href="Loja.jsp">Garagem Nerd</a></h1>
         </div>
         
         <div id="header_right">
-            <a href="#">My Account</a> | <a href="carrinho.jsp">Checkout</a> | <a href="login.jsp">Log In</a>
+            <a href="login.jsp">My Account</a> | <a href="#">My Wishlist</a> | <a href="carrinho.jsp">My Cart</a> | <a href="carrinho.jsp">Checkout</a> | <a href="login.jsp">Log In</a>
         </div>
         <div class="cleaner"></div>
-        </div> <!-- END of templatemo_header -->
+    </div> <!-- END of templatemo_header -->
     </body>
 </html>
