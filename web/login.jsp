@@ -98,6 +98,8 @@ ddsmoothmenu.init({
                 <%}%>
         
         <form action="ControleAcesso" method="POST">
+            <p>Para efeutar as compras você precisa estar logado!</p>
+            <p></p>
              Login: <input type="text" name="txtLogin"></br></font><br>
              Senha: <input type="password" name="txtSenha"></br></font>
             </br>
@@ -110,7 +112,8 @@ ddsmoothmenu.init({
             
         </div>
         <hr>
-        <%@include file="footer.jsp" %>
+        
         
     </body>
+                    <%@include file="footer.jsp" %>
 </html>

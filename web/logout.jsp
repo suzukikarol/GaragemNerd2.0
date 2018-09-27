@@ -87,14 +87,14 @@ ddsmoothmenu.init({
             </div>
             <%@include file="menulateral2.jsp" %>
            
-        </div>
+        </div><%-- até aqui vem o layout--%>
         <div>
             <br></br>
         <h1 style="font-family: cursive, Comic Sans" color="white" >Obrigado pela visita!</h1>
         <a href="login
            .jsp"><font style="font-family: cursive, Comic Sans" >Logar novamente</font></a>
         </div>
-        </div>
+        </div><%-- fecha o layout--%>
         <hr>
         <%@include file="footer.jsp" %>
     </body>

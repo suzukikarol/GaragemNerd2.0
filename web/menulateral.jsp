@@ -19,10 +19,10 @@
                     	<li>Batman</li>
                         <li>Flash</li>
                         <li>Homem Aranha</li>
-                        <li>Hulk/li>
+                        <li>Hulk</li>
                         <li>DeadPool</li>
                         <li>Turma da Mônica</li>
-                        <li>Nulher Maravilha</li>
+                        <li>Mulher Maravilha</li>
                         <li>Homem de Ferro</li>
                         <li>Tio Patinhas</li>
                         <li>Mickey</li>

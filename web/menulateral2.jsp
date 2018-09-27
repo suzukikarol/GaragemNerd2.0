@@ -13,7 +13,7 @@
     </head>
     <body>
          <div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Mais Vendidos</h3>   
+            	<h3>Ultimos Vendidos</h3>   
                 <div class="content"> 
                 	<div class="bs_box">
                     	<img src="images/captainamerica.jpg"/>
