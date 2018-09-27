@@ -177,14 +177,15 @@ public class ProdutoDAO {
         try{            
             conexao = Conexao.getConexao();
             
-            String sql = "select * from produto where titulo ilike '%"+txt+"%'";
+            String sql = "select * from quadrinho where titulo ilike ?";
             PreparedStatement pstmt = conexao.prepareStatement(sql);
+            pstmt.setString(1, '%' + txt + '%');
             ResultSet rs = pstmt.executeQuery();
             
             //só vai retornar uma linha de obj
             while(rs.next()){
                 
-                produto.setId(rs.getInt("id"));
+                produto.setId(rs.getInt("id_quadrinho"));
                 produto.setTitulo(rs.getString("titulo"));
                 produto.setDescricao(rs.getString("descricao"));                
                 produto.setPreco(rs.getDouble("preco"));
